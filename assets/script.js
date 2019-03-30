@@ -27,7 +27,8 @@ database.ref().on("child_added", function(snapshot){
 })
 
 
-&("#add-employee").on("click", function(){
+$("#add-employee").on("click", function(){
+  event.preventDefault();
 
   name = $("#name-input").val().trim();
   role = $("#role-input").val().trim();
