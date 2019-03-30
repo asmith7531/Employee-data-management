@@ -18,20 +18,20 @@ var monthlyRate;
 var monthsWorked;
 var totalBilled;
 
-database.ref().push()
+database.ref().push();
 
+database.ref().on("child_added", function(snapshot) {});
 
-database.ref().on("child_added", function(snapshot){
-
-
-})
-
-
-&("#add-employee").on("click", function(){
-
-  name = $("#name-input").val().trim();
-  role = $("#role-input").val().trim();
-  startDate = $("#start-date-input").val().trim();
-  monthlyRate = $("#monthly-rate-input").val().trim();
-
-})
+$("#add-employee").on("click", function() {
+  name = $("#inputName")
+    .val()
+    .trim();
+  console.log(name);
+  // role = $("#role-input").val().trim();
+  // startDate = $("#start-date-input").val().trim();
+  // monthlyRate = $("#monthly-rate-input").val().trim();
+  var nameData = $("<td>").text(name);
+  var newRow = $("<tr>").append(nameData);
+  console.log(newRow);
+  $(".memberlist").append(newRow);
+});
