@@ -8,3 +8,10 @@ var config = {
   messagingSenderId: "176647660987"
 };
 firebase.initializeApp(config);
+
+//defining the addBtn var
+var addBtn = $("#addEmployeeBtn")
+//onclick event to dynamically add html row
+addBtn.on("click", function(){
+
+})

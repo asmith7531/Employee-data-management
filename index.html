@@ -40,9 +40,12 @@
         </thead>
         <tbody>
           <tr>
-            <td scope="row"></td>
-            <td></td>
-            <td></td>
+            <td class="name"></td>
+            <td class="role"></td>
+            <td class="startDate"></td>
+            <td class="monthsWorked"></td>
+            <td class="monthlyRate"></td>
+            <td class="totalBilled"></td>
           </tr>
           <tr>
             <td scope="row"></td>
@@ -58,7 +61,7 @@
         <div class="form">
         <div>
         <h1>Add Employee</h1>
-        <label for="inputName" class="col-sm-1-12 col-form-label">Employee Name</label>
+        <label for="inputName" class="col-sm-1-12  name col-form-label">Employee Name</label>
         <div class="form-group row">
           <div class="col-sm-1-12">
             <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Jane Doe">
@@ -89,13 +92,10 @@
                   </div>
                 </div>
                 </div>
-
-                    
-                
       </div>
         <div class="form-group row">
           <div class="offset-sm-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Add Employee</button>
+            <button type="submit" id="addEmployeeBtn" class="btn btn-primary">Add Employee</button>
           </div>
         </div>
       </form>
