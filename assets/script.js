@@ -38,8 +38,10 @@ $("#add-employee").on("click", function (e) {
     })
 })
 
-database.ref().on("child_added", function (snapshot) {
+database.ref().on("child_added", function (childSnapshot) {
 
-  
+  console.log(childSnapshot.val().name);
+}, function(errorObject) {
 
+  console.log("Errors Handled " + errorObject.code);
 })
