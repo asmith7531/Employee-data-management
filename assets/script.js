@@ -25,3 +25,13 @@ database.ref().on("child_added", function(snapshot){
 
 
 })
+
+
+&("#add-employee").on("click", function(){
+
+  name = $("#name-input").val().trim();
+  role = $("#role-input").val().trim();
+  startDate = $("#start-date-input").val().trim();
+  monthlyRate = $("#monthly-rate-input").val().trim();
+
+})
