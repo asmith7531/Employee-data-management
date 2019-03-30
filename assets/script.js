@@ -11,13 +11,17 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-var
-var
-var
-var
+var name;
+var role;
+var startDate;
+var monthlyRate;
+var monthsWorked;
+var totalBilled;
+
+database.ref().push()
 
 
-database.ref().on("value", function(snapshot){
+database.ref().on("child_added", function(snapshot){
 
-  
+
 })
